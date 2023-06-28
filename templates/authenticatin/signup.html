@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]>      <html class="no-js"> <!--<![endif]-->
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <title></title>
+        <meta name="description" content="">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="">
+    </head>
+    <body>
+        <h3>Sign Up</h3>
+		<form action="/signin" method="post">
+		{% csrf_token %}
+			<label for="">usename</label>
+			<input type="text" id="username" name="username" placeholder="create user name(only letters and numbers)"Required>
+            <br>
+			<label for="">First name</label>
+			<input type="text" id=" fname" name="fname" placeholder="enter your firsr name(only letters and numbers)"Required>
+            <br>
+			<label for="">lastname</label>
+			<input type="text" id="lname" name="lname" placeholder="Enter your lastname(only letters and numbers)"Required>
+			<br>
+			<label for="">email</label>
+			<input type="email" id="email" name="email" placeholder="enter your email address(only letters and numbers)"Required>
+            <br>
+			<label for="">password</label>
+			<input type="password" id="pass1" name="pass1" placeholder="create password (only letters and numbers)"Required>
+            <br>
+			<label for="">confrim your password</label>
+			<input type="password" id="pass2" name="pass2" placeholder="confrim your password(only letters and numbers)"Required>
+			<br>
+          
+			<button type="submit">signup</button>
+
+        </form>
+
+        <script src="" async defer></script>
+    </body>
+</html>
